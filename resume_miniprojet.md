@@ -1,4 +1,9 @@
 # RAHMANI Abdelkader
+-----------------------------------
+
+https://github.com/kader9090/webstatic_jenkins_dur/blob/master/resume_miniprojet.md
+------------------------------------
+
 ## Mini_projet Jenkins
 ----------------------------------------------
  ### Instructions:
