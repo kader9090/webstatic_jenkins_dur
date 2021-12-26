@@ -70,6 +70,13 @@ sudo ufw status
 
 Status: inactive
 
+Installation Docker
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+sudo usermod -aG docker ubuntu
+sudo usermod -aG docker jenkins
+
 # Configuration de Jenkins
 
 http://3.80.141.120:8080/
