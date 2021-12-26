@@ -175,10 +175,18 @@ le canal :jenkinsdur-webstatic
 
 le test de connexion est reussi
 
+# Dockerfile:
+
+```
+FROM nginx
+COPY ./ /usr/share/nginx/html
+```
+
 # Jenkinsfile
 
 Maintenant que la configuration de l'environnement est terminée, on écrit le Jenkinsfile:
 
 ```
+
 
 ```
