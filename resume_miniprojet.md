@@ -134,9 +134,11 @@ on teste le lien webhook comme indiqué sur cette capture:
 
 *embedaable-build-status
 [ Jenkins ] → Administrer Jenkins → Plugin → Embeddable-build-status
-[ Jenkins ] → Projet_Deploy → Embeddable Build Status → Links / Markdown / 
-unprotected
 
+ajouter le github build status dans le README.md
+[ Jenkins ] → cicd-jenkins_dur-webstatic → Embeddable Build Status → Links / Markdown / unprotected=> je copie le lien unprotected et je colle sur le README.md sur vscode.
+
+![Capture203](./capture9.JPG)
 
 *slack notification Plugin
 [ Jenkins ] → Administrer Jenkins → Plugin → Slack Notification Plugin
@@ -163,3 +165,6 @@ workspace: ajc-devops-siege (Sous-domaine de l’équipe)
 le canal :jenkinsdur-webstatic
 
 ![Capture203](./capture8.JPG)
+
+le test de connexion est reussi
+
