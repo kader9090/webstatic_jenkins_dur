@@ -20,7 +20,7 @@ pipeline {
                         script{
                             sh '''
 
-                            ssh -o StrictHostKeyChecking=no -i ${keyfile} ${NUSER}@${EC2_PRODUCTION_HOST} docker build -t $USERNAME/$IMAGE_NAME:$BUILD_TAG
+                            ssh -o StrictHostKeyChecking=no -i ${keyfile} ${NUSER}@${EC2_PRODUCTION_HOST} docker build -t $USERNAME/$IMAGE_NAME:$BUILD_TAG .
                             
                             '''
                
