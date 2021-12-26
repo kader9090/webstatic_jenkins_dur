@@ -51,7 +51,7 @@ sudo apt install jenkins -y
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 
-![Capture203](./capture1.JPG)
+![Capture203](./Capture1.JPG)
 
 
 sudo ufw allow 8080  =>
@@ -69,13 +69,13 @@ http://3.80.141.120:8080/
 
 
 
-![Capture203](./capture2.JPG)
+![Capture203](./Capture2.JPG)
 
 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
-![Capture203](./capture3.JPG)
+![Capture203](./Capture3.JPG)
 
 on installe les plugins suggérés et on crée un utilisateur
 
@@ -86,8 +86,8 @@ GitHub project: https://github.com/kader9090/webstatic_jenkins_dur.git/
 Build Triggers: GitHub hook trigger for GITScm polling
 Pipeline: regardes capture
 
-![Capture203](./capture4.JPG)
-![Capture203](./capture5.JPG)
+![Capture203](./Capture4.JPG)
+![Capture203](./Capture5.JPG)
 
 # ajouter des credentials: 
 
@@ -124,11 +124,11 @@ configuration du webhook sur le github
 payload url:
 @ip de server jenkins:8080/github-webhook/
 
-![Capture203](./capture6.JPG)
+![Capture203](./Capture6.JPG)
 
 on teste le lien webhook comme indiqué sur cette capture:
 
-![Capture203](./capture7.JPG)
+![Capture203](./Capture7.JPG)
 
 
 
@@ -138,7 +138,7 @@ on teste le lien webhook comme indiqué sur cette capture:
 ajouter le github build status dans le README.md
 [ Jenkins ] → cicd-jenkins_dur-webstatic → Embeddable Build Status → Links / Markdown / unprotected=> je copie le lien unprotected et je colle sur le README.md sur vscode.
 
-![Capture203](./capture9.JPG)
+![Capture203](./Capture9.JPG)
 
 *slack notification Plugin
 [ Jenkins ] → Administrer Jenkins → Plugin → Slack Notification Plugin
@@ -164,7 +164,7 @@ sur jenkins: configurer le systeme=> slack => créer credential =>ajouter creden
 workspace: ajc-devops-siege (Sous-domaine de l’équipe)
 le canal :jenkinsdur-webstatic
 
-![Capture203](./capture8.JPG)
+![Capture203](./Capture8.JPG)
 
 le test de connexion est reussi
 
