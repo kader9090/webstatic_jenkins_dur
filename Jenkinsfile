@@ -76,10 +76,7 @@ pipeline {
                             timeout(time: 15, unit: "MINUTES") {
                                 input message: 'Do you want to approve the deploy in production?', ok: 'Yes'
                             }						
-                            sh'''
-                                apk update
-                                which ssh-agent || ( apk add openssh-client )
-                                eval $(ssh-agent -s)
+                            sh'''                              
                                 ssh -o StrictHostKeyChecking=no -i ${keyfile} ${NUSER}@${EC2_PRODUCTION_HOST} docker stop $CONTAINER_NAME || true
                                 ssh -o StrictHostKeyChecking=no -i ${keyfile} ${NUSER}@${EC2_PRODUCTION_HOST} docker rm $CONTAINER_NAME || true
                                 ssh -o StrictHostKeyChecking=no -i ${keyfile} ${NUSER}@${EC2_PRODUCTION_HOST} docker rmi $USERNAME/$IMAGE_NAME:$BUILD_TAG || true
