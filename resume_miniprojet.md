@@ -110,7 +110,7 @@ token github:
     * Nom : kader9090
     * MDP : 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
     * ID  : github_password
-    * ID  : github_password
+    * descritpion  : github_password
 
 
 * Docker Hub :
