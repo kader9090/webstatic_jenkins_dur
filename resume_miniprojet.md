@@ -33,6 +33,13 @@ sudo usermod -aG docker ubuntu
 je me connecte en ssh sur la machine prod pour vérifier si docker est bien installé:
 docker --version => Docker version 20.10.12, build e91ed57 => docker est bien installé
 
+pour vérifier que curl est bien présent sur la machine (ça sera utilisé pour l'acceptation dans le jenkinsfile)
+
+curl --version => curl 7.68.0 (x86_64-pc-linux-gnu) libcurl/7.68.0 OpenSSL/1.1.1f zlib/1.2.11 brotli/1.0.7 libidn2/2.2.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.3/openssl/zlib nghttp2/1.40.0 librtmp/2.3
+Release-Date: 2020-01-08
+
+ 
+
 # Installation de Jenkins:
 # machine2:kader-ec2-jenkins : ubuntu 20.04 lts, t2.large, SSD 20 Go, securité groupe : 22/8080:interface Jenkins
 procédure :
@@ -168,3 +175,10 @@ le canal :jenkinsdur-webstatic
 
 le test de connexion est reussi
 
+# Jenkinsfile
+
+Maintenant que la configuration de l'environnement est terminée, on écrit le Jenkinsfile:
+
+```
+
+```
