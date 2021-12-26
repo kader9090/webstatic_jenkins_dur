@@ -1,3 +1,7 @@
+
+[![Build Status](http://3.80.141.120:8080/buildStatus/icon?job=cicd-jenkins_dur-webstatic)](http://3.80.141.120:8080/job/cicd-jenkins_dur-webstatic/)
+
+
 Static Website Example
 ----------------------
 
